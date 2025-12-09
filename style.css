@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding-bottom: 300px;
+}
+
+.content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    padding-top: 10px;
+    background: rgb(167, 164, 164);
+    min-height: 100vh;
+    text-align: center;
+    box-shadow: 
+        0 0 0 5vw #8e8e8e, 
+        0 0 0 10vw #585858,
+        0 0 0 15vw #2c2c2c,    
+        0 0 0 20vw #1b1b1b;
+    z-index: 1;
+}
+
+.content-reversed {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px;
+  padding-top: 10px;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
+  color:white;
+  text-align: center;
+  box-shadow: 
+    0 0 0 5vw #1b1b1b,
+    0 0 0 10vw #2c2c2c,  
+    0 0 0 15vw #585858,
+    0 0 0 20vw #8e8e8e;
+}
+
+.letter-box {
+    background-color: black;
+    width: 100;
+    color: white;
+    z-index: 15;
+}
+
+@media print {
+    .color-layer {
+        display: none;
+    }
+    
+    .content {
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 5px solid #8e8e8e;
+  z-index: 5;
+  padding: 10px 0; /* Add some padding */
+}
+
+.container {
+    display:flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 100%; /* Appears ABOVE the "Mouse over me!" text */
+  left: 0;
+  background-color: black;
+  min-width: 300px; /* Wider to fit audio controls */
+  box-shadow: 0px -8px 16px 0px rgba(0,0,0,0.2); /* Shadow above */
+  padding: 15px;
+  z-index: 10; /* Above the footer */
+  border-radius: 8px 8px 0 0;
+}
+
+#music-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#marker-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.audio-track {
+  margin-bottom: 15px;
+}
+
+.audio-track:last-child {
+  margin-bottom: 0;
+}
+
+.audio-track p {
+  margin-bottom: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.audio-track audio {
+  width: 100%;
+  filter: invert(1)
+}
+
+/*
+Font styles below
+*/
+h1 {
+    font-size: 5vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+ul {
+    text-align: left;
+    line-height: 1.5;
+}
+
+tr, td{
+    padding: 10px;
+}
+
+@font-face {
+          font-family: windows;
+          src: url("fonts/windows-bold.ttf") format('truetype');
+          font-weight: 400;
+          font-style: bold;
+}
+
+.ital {
+    font-style: italic;
+}
+.line {
+    text-decoration: underline;
+}
+.fontface {
+    line-height: 1;
+    font-family: windows, Arial, sans-serif;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+<!--Aaron Eicholtz, Web Development, Index-Home, Final Website, 12-5-2025.-->
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Unsolicited Composition Advice">
+<meta name="keywords" content="beepbox, jummbus, composition, advice, recommendation">
+<meta title="Unsolicited composition advice, just for you.">
+<script src="javascript\home.js" defer></script>
+</header>
+
+<body>
+
+<div class="footer fontface">
+  <p>As you scroll...</p>
+  <br>
+  <div class="container">
+    <div class="dropdown" id="music-dropdown">
+      Want to hear some examples?
+      <div class="dropdown-content">
+        <div class="audio-track">
+          <p>Ruined Oaths</p>
+          <audio controls muted loop>
+            <source src="music\RO\Ruined Oaths.wav" type="audio/wav">
+            <source src="music\RO\Ruined Oaths.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="audio-track">
+          <p>Murmured Echoes</p>
+          <audio controls muted loop>
+            <source src="music\MM\Murmured Echoes.wav" type="audio/wav">
+            <source src="music\MM\Murmured Echoes.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <div class="audio-track">
+          <p>Ambient Shadows</p>
+          <audio controls muted loop>
+            <source src="music\AS\Ambient Shadows.wav" type="audio/wav">
+            <source src="music\AS\Ambient Shadows.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown" id="marker-dropdown">
+      Need a specific section?
+      <div class="dropdown-content">
+        <a href="#Where">Where to Start?</a>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    
+
+
+<main class="content fontface">
+<h1 style="width:100%; background-color: rgb(237, 237, 237); border-style: solid; border-width: 10px, 20px; border-color: black;">Composition,<br>Compilation,<br>and Considerations</h1><br><br><br>
+<p>If anybody here would like some unsolicited anecdotal advice about how to start with music design, you've come to the right spot!</p>
+<br>
+<br>
+<br>
+<h2 class="ital">"...Why should I listen?"</h2>
+<br>
+<br>
+<br>
+<p>Should you ask this fair question, Here's some potential considerations:</p>
+<br>
+<ul>
+  <li>You get melodies or progressions stuck in your head constantly</li>
+  <li>Need a quick and dirty solution for a backing track</li>
+  <li>You want to try making music but are unsure of where to start</li>
+  <li>You're just looking for a 5 minute or so distraction</li>
+  <li>You profoundly don't care either way</li>
+</ul>
+<br>
+<form style="text-align: left;" id="motivation">
+<label for="choice">Which reason best applies to you?</label>
+<select id="choice" name="choice" required>
+  <option hidden disabled selected value="angle">What's your angle?</option>
+  <option value="stuck">Stuck Melodies</option>
+  <option value="qd">Quick & Dirty</option>
+  <option value="unsure">Unsure</option>
+  <option value="distraction">Distraction</option>
+  <option value="notcare">Don't Care</option>
+</select>
+<input type="submit" required>
+</form>
+<br>
+<p id="response"></p>
+<br>
+<br>
+<br>
+<h2 class="ital" id="Where">"Where do I start?"</h2>
+<br>
+<br>
+<br>
+<p>You have two main options: Do what I did and just start messing around, or Study up first.</p>
+<br>
+
+
+
+<p>In my experience, I'd categorize the options I saw into three main types:</p>
+<br>
+<table>
+
+  <tr>
+    <td></td>
+    <td class="line">The Informal</td>
+    <td class="line">The Trackers</td>
+    <td class="line">The Professional</td>
+  </tr>
+  <tr>
+    <td>Examples include:</td>
+    <td>Chrome Music Lab, Beepbox</td>
+    <td>Furnace, OpenMPT</td>
+    <td>Reaper, FL Studio</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<h3 id="Informal">The Informal</h3>
+<br>
+<br>
+<br>
+<p>This category is great for dipping your toes into the space.</p>
+<br>
+<p>The general vibe of these types are an emphasis on making <i>something</i> to listen to, and they're great for getting ideas out quick.</p>
+<br>
+<a href="Beep-Basics.html" target="_blank">
+<img src="Icons\Beepbox.png" alt="A circular logo of the browser-based composition tool 'Beepbox'." style="max-width: 75%;">
+</a>
+<br>
+<p>(If you want some more specific suggestions, click the logo)</p>
+<br>
+<br>
+<p>This tool, <a href="https://www.beepbox.co" target="_blank">Beepbox.co</a> and its many forks (my personal favorite being <a href="https://jummb.us" target="_blank">jummb.us</a>) are great as you get better and improve.</p>
+<br>
+<p>They start out more involved than things such as Chrome Music Lab's <a href="https://musiclab.chromeexperiments.com/Song-Maker/" target="_blank">Song Maker</a>, but you can explore the Song Settings and Preference tabs at your own pace as you get more comfortable.</p>
+<br>
+<br>
+<br>
+<p>If you're looking for something more specific however, the next choice could be:</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 id="Tracker">The Trackers</h3>
+<br>
+<br>
+<br>
+<p>This category is great for chiptune and repetition.</p>
+<br>
+<p>They can be more accurately described as sound emulators, and are <i> far</i> more particular as a result.</p>
+<br>
+<a href="Furnace-Basics.html" target="_blank">
+<img src="Icons\Furnace.png" alt="A bowl containing several computer chips, the logo for the chiptune tracker 'Furnace'." style="max-width: 75%;">
+</a>
+<br>
+<p>There's a very real chance that without reading up on a specific tool's documentation (like <a href="https://tildearrow.org/furnace/" target="_blank">Furnace's</a>), you'd have no clue what's even on screen (I know I didn't!).</p>
+<br>
+<p>A fun quirk of many trackers is that because of their emulation, many of them are capable of natively running on hardware like an NES or retro computers!</p>
+<br>
+<p>If it is what you're looking for, they're still conceptually simple once you learn the specifics.</p>
+<br>
+<br>
+<br>
+<p>The same cannot be said about the last category, however.</p>
+<br>
+<br>
+<br>
+<h3 id="professional">The Professional</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>These are what separates the hobbyist from the audiophile.</p>
+<br>
+<p>These go beyond an abstracted structure, and are instead so free-form that I would recommend studying up music theory first before approaching them.</p>
+<br>
+<a href="DAW-Basics.html" target="_blank">
+<img src="Icons\Reaper.png" alt="A multicolor icon, the logo for the Digital Audio Workstation 'Reaper'." style="max-width: 75%;">
+</a>
+<br>
+<br>
+
+<p>Powerful DAWs like <a href="https://www.image-line.com" target="_blank">FL Studio</a> are fully paid, and even the previous example <a href="https://www.reaper.fm" target="_blank">Reaper</a> politely asks after the trial period expires.</p>
+<br>
+<p>With that said however, nothing compares to the mixing and quality control options a good DAW can provide. If you can stick with it, it is unmatched.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h3 id="now" class="ital">"...What now?"</h3>
+<br>
+<br>
+<br>
+<p>Having given my thoughts about good options, now all I can recommend is application.</p>
+<br>
+<p>Given that you said you felt you </p><p id="callback"></p><p>I'd say you should move forward with that.</p>
+<br>
+<p>If you really feel like it, you can try looking at my <a href="Personal-Uses.html" target="_blank">own use cases</a> to get some ideas, but frankly you can do what you want.</p>
+<br>
+
+</main>
+
+</body>
+
+</html>
